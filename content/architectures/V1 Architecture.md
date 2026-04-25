@@ -43,7 +43,7 @@ V1 retains V0's stable components (models, GPU kernels, utilities) but re-archit
 
 Combining these required complex mode switching and scheduler state machines.
 
-**V1 solution:** Unified scheduler treats prompt and output tokens identically (see [[#Unified Scheduler]]).
+**V1 solution:** Unified scheduler treats prompt and output tokens identically (see #Unified Scheduler).
 
 ### 4. Zero Configs (Enable by Default)
 

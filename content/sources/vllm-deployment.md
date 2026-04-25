@@ -55,7 +55,7 @@ vLLM's FastAPI-based HTTP server provides drop-in OpenAI API compatibility while
 **Configuration:**
 - `--generation-config vllm` to disable HF generation_config.json
 - `--enable-offline-docs` for air-gapped FastAPI docs
-- Integration with [[Ray Serve LLM]] for autoscaling/load balancing
+- Integration with Ray Serve LLM for autoscaling/load balancing
 
 ### Benchmarking CLI
 
@@ -235,11 +235,11 @@ None detected. Documentation is consistent with previous batches on parallelism,
 - [[Structured Outputs]] — Grammar/regex/JSON schema constraints
 - [[Speculative Decoding]] — EAGLE/MTP/draft/n-gram methods
 - [[Quantization]] — FP8/INT8/INT4 compression
-- [[Multi-Modal Models]] — Vision/audio preprocessing
+- Multi-Modal Models — Vision/audio preprocessing
 - [[Attention Backends]] — Pluggable attention implementations
 - [[CUDA Graphs]] — Graph capture modes
-- [[GuideLLM]] — Production benchmarking framework
-- [[Ray Serve LLM]] — Alternative autoscaling/load balancing
+- GuideLLM — Production benchmarking framework
+- Ray Serve LLM — Alternative autoscaling/load balancing
 - [[Disaggregated Serving]] — Prefill/decode separation
 - [[KV Cache Transfer]] — KV routing connectors
 

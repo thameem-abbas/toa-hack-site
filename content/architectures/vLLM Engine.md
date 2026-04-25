@@ -57,7 +57,7 @@ vLLM V1 uses a multi-process design to maximize throughput and minimize CPU over
 **Count:** 1 per GPU. Total workers = `DP × PP × TP`
 
 **Responsibilities:**
-- Load model shard weights (sharding happens at initialization, see [[#Class Hierarchy]])
+- Load model shard weights (sharding happens at initialization, see #Class Hierarchy)
 - Execute model forward passes
 - Manage GPU memory (CUDA graphs, workspace buffers)
 - Communicate with owning engine core
@@ -153,7 +153,7 @@ The actual `torch.nn.Module` instance inside each model runner.
 **Key points:**
 - vLLM supports 200+ model architectures (decoder-only, encoder-decoder, vision-language, etc.)
 - See [[V1 Architecture#Models]] for model type support matrix
-- Model initialization signature is uniform across all models (see [[#Class Hierarchy]])
+- Model initialization signature is uniform across all models (see #Class Hierarchy)
 
 ## Class Hierarchy
 

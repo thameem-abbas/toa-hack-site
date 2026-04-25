@@ -132,7 +132,7 @@ vllm serve facebook/opt-13b \
   --distributed-executor-backend ray
 ```
 
-See [[Python Multiprocessing]] for tradeoffs between `fork`, `spawn`, and `forkserver` methods.
+See Python Multiprocessing for tradeoffs between `fork`, `spawn`, and `forkserver` methods.
 
 ## Interaction with Other Parallelism Strategies
 
@@ -303,7 +303,7 @@ See [Troubleshooting distributed deployments](https://docs.vllm.ai/en/latest/ser
 - [[Context Parallelism]] — Shard long sequences to reduce KV cache duplication
 - [[Kernel Fusions]] — AllReduce+RMSNorm, AsyncTP GEMM+Collective fusions
 - [[vLLM Engine]] — Scheduler and executor architecture that orchestrates TP workers
-- [[Python Multiprocessing]] — Distributed executor backend tradeoffs (fork vs spawn vs Ray)
+- Python Multiprocessing — Distributed executor backend tradeoffs (fork vs spawn vs Ray)
 - [[Mixture of Experts]] — MoE architecture and TP/EP interaction
 
 ## Key Metrics

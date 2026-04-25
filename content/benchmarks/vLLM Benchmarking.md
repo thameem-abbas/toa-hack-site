@@ -16,7 +16,7 @@ vLLM provides three primary benchmarking commands via the `vllm bench` CLI:
 - **`vllm bench throughput`** — Offline throughput benchmark (direct engine)
 - **`vllm bench mm-processor`** — Multimodal processor pipeline profiling
 
-For production workloads, [[GuideLLM]] is recommended (live progress, automatic reports, flexible workload patterns).
+For production workloads, GuideLLM is recommended (live progress, automatic reports, flexible workload patterns).
 
 ## Key Metrics
 
@@ -387,7 +387,7 @@ Creates `num_prompts / random_batch_size` requests with `random_batch_size` docu
 
 ## Cross-References
 
-- [[GuideLLM]] — Production-grade benchmarking framework (recommended)
+- GuideLLM — Production-grade benchmarking framework (recommended)
 - [[vLLM Metrics]] — Prometheus metrics for live monitoring
 - [[Optimization Levels]] — -O0 to -O3 performance tuning
 - [[Speculative Decoding]] — EAGLE/MTP/n-gram acceptance rate measurements

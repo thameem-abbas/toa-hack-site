@@ -170,7 +170,7 @@ Four-stage compilation pipeline: **TorchDynamo graph capture** → **vLLM graph 
 ### From CustomOp System
 - Dispatch mechanism enables [[Plugin System]] OOT device support
 - Integration with [[torch.compile Integration]] (custom ops vs Inductor fusion)
-- Custom ops for [[Quantization]] (quant_fp8), [[RoPE]], [[MoE]], [[Attention]]
+- Custom ops for [[Quantization]] (quant_fp8), RoPE, MoE, Attention
 
 ### From Debug Guide
 - Debugging [[torch.compile Integration]] via tlparse, flags, dynamic shape modes

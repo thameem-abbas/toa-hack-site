@@ -22,9 +22,9 @@ System designs for LLM inference at scale.
 - [[Hybrid KV Cache Manager]] — per-layer KV cache allocation for hybrid models (Gemma, Llama 4, Jamba), unified page size with mixed attention types
 - [[KV Cache Transfer]] — connectors for transferring KV cache between prefill and decode instances (P2pNcclConnector, NixlConnector, LMCache, Mooncake, FlexKV)
 - [[llm-d]] — disaggregated inference on Kubernetes, prefill/decode pool separation, KV cache routing
-- [[Inference Gateway]] — multi-model routing, A/B canary, per-pool autoscaling
+- Inference Gateway — multi-model routing, A/B canary, per-pool autoscaling
 
 ## Deployment Patterns
-- [[Single-Node Serving]] — one GPU or multi-GPU on single machine
-- [[Multi-Node Distributed]] — cross-node tensor/pipeline parallelism
-- [[Kubernetes Inference]] — HPA, custom metrics, Prometheus integration
+- Single-Node Serving — one GPU or multi-GPU on single machine
+- Multi-Node Distributed — cross-node tensor/pipeline parallelism
+- Kubernetes Inference — HPA, custom metrics, Prometheus integration

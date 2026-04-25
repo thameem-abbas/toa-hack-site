@@ -309,4 +309,4 @@ Used by [[CUDA Graphs]] to determine capture eligibility.
 - [[torch.compile Integration]] — interaction between Inductor and attention backends
 - [[Kernel Fusions]] — attention+quant fusion optimization
 - [[Speculative Decoding]] — attention backend requirements for draft model verification
-- [[Multi-Modal Models]] — multimodal prefix full attention support
+- Multi-Modal Models — multimodal prefix full attention support

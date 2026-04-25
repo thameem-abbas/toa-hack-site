@@ -416,8 +416,8 @@ pytest -q tests/quantization/test_modelopt.py
 
 **Tools:**
 - [[llm-compressor]] — vLLM unified quantization toolkit
-- [[AutoGPTQ]] — Deprecated GPTQ library
-- [[AutoAWQ]] — Deprecated AWQ library
+- AutoGPTQ — Deprecated GPTQ library
+- AutoAWQ — Deprecated AWQ library
 - [[vLLM]] — Inference engine
 
 **Concepts:**

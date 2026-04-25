@@ -174,7 +174,7 @@ vLLM has 12 categories of CustomOps (60+ total operations):
 - `mm_encoder_attn` (multi-modal encoder attention)
 - `rel_pos_attention` (relative position attention)
 
-**Related:** [[MLA Attention]], [[Multi-Modal Models]], [[Attention Backends]]
+**Related:** MLA Attention, Multi-Modal Models, [[Attention Backends]]
 
 ### 2. Activation
 
@@ -184,20 +184,20 @@ vLLM has 12 categories of CustomOps (60+ total operations):
 - `relu2`, `xielu` (ReLU variants)
 - `swigluoai_and_mul`, `fatrelu_and_mul` (specialized activations)
 
-**Related:** [[SiLU Activation]], [[GELU]], [[FFN Architecture]]
+**Related:** SiLU Activation, GELU, FFN Architecture
 
 ### 3. MM-Conv
 
 - `conv2d`, `conv3d` (2D/3D convolution for vision models)
 
-**Related:** [[Multi-Modal Models]], [[Vision Encoders]]
+**Related:** Multi-Modal Models, Vision Encoders
 
 ### 4. Embedding
 
 - `vocab_parallel_embedding` (vocabulary embedding with tensor parallelism)
 - `parallel_lm_head` (language model head with tensor parallelism)
 
-**Related:** [[Tensor Parallelism]], [[Vocabulary Projection]]
+**Related:** [[Tensor Parallelism]], Vocabulary Projection
 
 ### 5. Linear
 
@@ -205,13 +205,13 @@ vLLM has 12 categories of CustomOps (60+ total operations):
 - `column_parallel_linear` (column-wise tensor-parallel linear layer)
 - `replicated_linear` (non-parallelized linear layer)
 
-**Related:** [[Tensor Parallelism]], [[GEMM Optimization]]
+**Related:** [[Tensor Parallelism]], GEMM Optimization
 
 ### 6. Logits Processor
 
 - `logits_processor` (logits manipulation for sampling)
 
-**Related:** [[Sampling Strategies]], [[Logit Bias]]
+**Related:** Sampling Strategies, Logit Bias
 
 ### 7. Mamba
 
@@ -221,7 +221,7 @@ vLLM has 12 categories of CustomOps (60+ total operations):
 - `plamo2_mamba_mixer` (Plamo2-specific Mamba mixer)
 - `short_conv` (short convolution for Mamba)
 
-**Related:** [[Mamba Models]], [[State-Space Models]], [[Hybrid Attention]]
+**Related:** Mamba Models, State-Space Models, Hybrid Attention
 
 ### 8. MoE
 
@@ -231,7 +231,7 @@ vLLM has 12 categories of CustomOps (60+ total operations):
 - `transformers_fused_moe` (Transformers-compatible MoE)
 - `grouped_topk` (grouped top-k routing)
 
-**Related:** [[MoE Architecture]], [[Expert Routing]], [[Sparse Experts]]
+**Related:** MoE Architecture, Expert Routing, Sparse Experts
 
 ### 9. Norm
 
@@ -239,7 +239,7 @@ vLLM has 12 categories of CustomOps (60+ total operations):
 - `rms_norm_gated` (gated RMSNorm)
 - `gemma_rms_norm` (Gemma-specific RMSNorm variant)
 
-**Related:** [[RMSNorm]], [[Layer Normalization]]
+**Related:** RMSNorm, Layer Normalization
 
 ### 10. Quantization
 
@@ -253,7 +253,7 @@ vLLM has 12 categories of CustomOps (60+ total operations):
 - `dual_chunk_rotary_embedding` (dual-chunk RoPE for long context)
 - `apply_rotary_emb` (apply RoPE to tensors)
 
-**Related:** [[RoPE]], [[Positional Encodings]], [[Long Context]]
+**Related:** RoPE, Positional Encodings, Long Context
 
 ### 12. Encoder
 
@@ -261,7 +261,7 @@ vLLM has 12 categories of CustomOps (60+ total operations):
 - `mm_encoder_attn` (multi-modal encoder attention, duplicated from Attention category)
 - `rel_pos_attention` (relative position attention, duplicated from Attention category)
 
-**Related:** [[Qwen Models]], [[Multi-Modal Models]]
+**Related:** Qwen Models, Multi-Modal Models
 
 ## Integration with torch.compile
 
@@ -609,7 +609,7 @@ llm = LLM(
 - [[Attention Backends]] — attention backend selection (separate from CustomOp dispatch)
 - [[Quantization]] — FP8 quantization custom ops
 - [[Tensor Parallelism]] — parallel linear/embedding custom ops
-- [[Multi-Modal Models]] — enforce-enable mechanism for ViT encoders
+- Multi-Modal Models — enforce-enable mechanism for ViT encoders
 
 ## Further Reading
 

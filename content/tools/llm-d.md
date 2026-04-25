@@ -255,4 +255,4 @@ See `examples/online_serving/ray_serve_deepseek.py` for Ray Serve alternative.
 - Official docs: [llm-d.ai/docs/guide](https://llm-d.ai/docs/guide)
 - GitHub: [llm-d/llm-d](https://github.com/llm-d/llm-d)
 - KServe LLMInferenceService: [kserve.github.io/website/docs/.../llmisvc-overview](https://kserve.github.io/website/docs/model-serving/generative-inference/llmisvc/llmisvc-overview)
-- [[Ray Serve LLM]] for alternative Kubernetes-native serving
+- Ray Serve LLM for alternative Kubernetes-native serving

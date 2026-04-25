@@ -385,14 +385,14 @@ Requests paused with `mode="keep"` produce tokens from old weights before pause,
 
 ### Sleep Mode
 - [[RLHF with vLLM]] — Sleep mode in training pipeline
-- [[Async RL]] — Pause/resume for mid-flight weight updates
+- Async RL — Pause/resume for mid-flight weight updates
 - [[vLLM Engine]] — Engine sleep/wake implementation
 - [[Tensor Parallelism]] — Distributed sleep/wake
 - [[Prefix Caching]] — Prefix cache discarded on sleep
 
 ### RLHF with vLLM
 - [[Sleep Mode]] — GPU memory release during training
-- [[Async RL]] — Pause/resume API for weight updates
+- Async RL — Pause/resume API for weight updates
 - [[Data Parallelism]] — Multi-rank weight sync
 - [[Tensor Parallelism]] — Sharded weight transfer
 - [[Speculative Decoding]] — Latency optimization for rollouts

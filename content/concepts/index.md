@@ -37,8 +37,8 @@ Foundational ideas behind LLM inference optimization.
 
 ## Serving Patterns
 - [[Disaggregated Serving]] — separating prefill and decode phases across GPU pools
-- [[Model Routing]] — directing requests to specialized model instances
-- [[LoRA Serving]] — serving multiple LoRA adapters from a single base model
+- Model Routing — directing requests to specialized model instances
+- LoRA Serving — serving multiple LoRA adapters from a single base model
 
 ## Optimization Strategies
 - [[Speculative Decoding]] — draft model proposes tokens, target verifies in parallel; converts sequential generation into parallel verification for 1.5-3× latency reduction

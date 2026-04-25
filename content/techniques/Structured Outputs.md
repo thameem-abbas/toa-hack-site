@@ -360,7 +360,7 @@ Even with constraints, model quality matters:
 
 - [[vLLM Engine]] — Logits processors integrate structured output masking
 - [[V1 Architecture]] — Grammar compilation happens in model executor
-- [[Tool Calling]] — Uses structured outputs for function arguments
+- Tool Calling — Uses structured outputs for function arguments
 
 ## Further Reading
 

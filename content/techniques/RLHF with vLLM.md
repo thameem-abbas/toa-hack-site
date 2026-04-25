@@ -83,7 +83,7 @@ Generation and training overlap via async coroutines:
 - Complex weight synchronization (weights updated mid-flight)
 - Requires pause/resume API
 
-See [[Async RL]] for implementation details.
+See Async RL for implementation details.
 
 ### GPU Sharing (RLHF-Specific)
 
@@ -197,7 +197,7 @@ This pattern minimizes peak GPU memory (avoids storing old + new weights simulta
 
 ## Async RL Workflow
 
-See [[Async RL]] for full details. Summary:
+See Async RL for full details. Summary:
 
 **1. Pause generation (keep requests in queue):**
 ```python
@@ -397,7 +397,7 @@ Track RLHF-specific metrics via [[vLLM Metrics]]:
 ## Cross-References
 
 - [[Sleep Mode]] — GPU memory release during training phase
-- [[Async RL]] — Pause/resume API for mid-flight weight updates
+- Async RL — Pause/resume API for mid-flight weight updates
 - [[vLLM Engine]] — Inference backend for rollout generation
 - [[Data Parallelism]] — Multi-rank weight synchronization
 - [[Tensor Parallelism]] — Sharded weight transfer via NCCL

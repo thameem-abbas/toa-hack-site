@@ -43,7 +43,7 @@ vllm serve NousResearch/Meta-Llama-3-8B-Instruct \
 
 **Embeddings:**
 - `/v1/embeddings` — Embeddings API for embedding models
-  - See [[Multi-Modal Models]] for multimodal embeddings
+  - See Multi-Modal Models for multimodal embeddings
 
 **Audio Processing:**
 - `/v1/audio/transcriptions` — Transcriptions API (Automatic Speech Recognition)
@@ -156,7 +156,7 @@ vllm serve <model> --enable-offline-docs
 
 ## Integration with Ray Serve
 
-[[Ray Serve LLM]] extends vLLM with production features:
+Ray Serve LLM extends vLLM with production features:
 - **Auto-scaling**: Dynamic replica scaling based on load
 - **Load balancing**: Request distribution across replicas
 - **Back-pressure**: Queue management and circuit breakers
@@ -170,7 +170,7 @@ See `examples/online_serving/ray_serve_deepseek.py` for multi-node DeepSeek R1 d
 - [[V1 Architecture]] — Multi-process architecture for API/engine separation
 - [[LoRA]] — Per-request LoRA adapter via `/v1/load_lora_adapter`, `/v1/unload_lora_adapter`
 - [[Structured Outputs]] — Constrained decoding via `structured_outputs` parameter
-- [[Multi-Modal Models]] — Vision/audio multimodal inputs via Chat API
+- Multi-Modal Models — Vision/audio multimodal inputs via Chat API
 - [[Quantization]] — FP8/INT8/INT4 quantized model serving
 - [[Speculative Decoding]] — EAGLE/MTP/draft methods for latency reduction
 
@@ -218,4 +218,4 @@ completion = client.chat.completions.create(
 
 - Official OpenAI API docs: [Completions](https://platform.openai.com/docs/api-reference/completions), [Chat](https://platform.openai.com/docs/api-reference/chat)
 - vLLM examples: `examples/basic/online_serving/openai_*_client.py`
-- [[GuideLLM]] for production benchmarking
+- GuideLLM for production benchmarking

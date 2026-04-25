@@ -319,7 +319,7 @@ vllm serve model --enable-lora ...
 - [[vLLM Engine]] — Per-request LoRA dispatch via scheduler
 - [[Quantization]] — LoRA on top of quantized base models
 - [[Mixture of Experts]] — LoRA for MoE expert layers
-- [[Multi-Modal Models]] — LoRA for vision tower/connector
+- Multi-Modal Models — LoRA for vision tower/connector
 
 ## Further Reading
 

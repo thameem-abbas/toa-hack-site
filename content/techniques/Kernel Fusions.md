@@ -100,7 +100,7 @@ User-set flags **always override** optimization-level defaults.
 
 **Code:** [`vllm/compilation/passes/fusion/allreduce_rms_fusion.py`](https://github.com/vllm-project/vllm/blob/main/vllm/compilation/passes/fusion/allreduce_rms_fusion.py), [`vllm/distributed/device_communicators/flashinfer_all_reduce.py`](https://github.com/vllm-project/vllm/blob/main/vllm/distributed/device_communicators/flashinfer_all_reduce.py)
 
-**Related:** [[Tensor Parallelism]], [[Quantization]], [[FlashInfer Backend]]
+**Related:** [[Tensor Parallelism]], [[Quantization]], FlashInfer Backend
 
 ---
 
@@ -123,7 +123,7 @@ vllm serve MiniMaxAI/MiniMax-M2.5 --tensor-parallel-size 4 \
 
 **Code:** [`vllm/compilation/passes/fusion/minimax_qk_norm_fusion.py`](https://github.com/vllm-project/vllm/blob/main/vllm/compilation/passes/fusion/minimax_qk_norm_fusion.py), [`csrc/minimax_reduce_rms_kernel.cu`](https://github.com/vllm-project/vllm/blob/main/csrc/minimax_reduce_rms_kernel.cu)
 
-**Related:** [[Tensor Parallelism]], [[QK Normalization]]
+**Related:** [[Tensor Parallelism]], QK Normalization
 
 ### Attention Fusions
 
@@ -156,7 +156,7 @@ Standard `Attention → NVFP4 dynamic`:
 
 **Code:** [`vllm/compilation/passes/fusion/attn_quant_fusion.py`](https://github.com/vllm-project/vllm/blob/main/vllm/compilation/passes/fusion/attn_quant_fusion.py) (standard), [`vllm/compilation/passes/fusion/mla_attn_quant_fusion.py`](https://github.com/vllm-project/vllm/blob/main/vllm/compilation/passes/fusion/mla_attn_quant_fusion.py) (MLA)
 
-**Related:** [[Quantization]], [[Attention Backends]], [[MLA Attention]], [[DeepSeek V3]]
+**Related:** [[Quantization]], [[Attention Backends]], MLA Attention, DeepSeek V3
 
 ---
 
@@ -187,7 +187,7 @@ fused_qk_norm_rope(qkv, ...)
 
 **Code:** [`vllm/compilation/passes/fusion/qk_norm_rope_fusion.py`](https://github.com/vllm-project/vllm/blob/main/vllm/compilation/passes/fusion/qk_norm_rope_fusion.py), [`csrc/ops.h`](https://github.com/vllm-project/vllm/blob/main/csrc/ops.h)
 
-**Related:** [[RoPE]], [[QK Normalization]], [[Qwen Models]]
+**Related:** RoPE, QK Normalization, Qwen Models
 
 ### Tensor Parallelism Fusions
 
@@ -222,7 +222,7 @@ Input → ReduceScatter → local RMSNorm → AllGather → Output
 
 **Code:** [`vllm/compilation/passes/fusion/sequence_parallelism.py`](https://github.com/vllm-project/vllm/blob/main/vllm/compilation/passes/fusion/sequence_parallelism.py)
 
-**Related:** [[Tensor Parallelism]], [[AsyncTP]], [[Distributed Serving]]
+**Related:** [[Tensor Parallelism]], AsyncTP, Distributed Serving
 
 ---
 
@@ -249,7 +249,7 @@ Input → ReduceScatter → local RMSNorm → AllGather → Output
 
 **Code:** [`vllm/compilation/passes/fusion/collective_fusion.py`](https://github.com/vllm-project/vllm/blob/main/vllm/compilation/passes/fusion/collective_fusion.py)
 
-**Related:** [[Tensor Parallelism]], [[Sequence Parallelism]], [[Distributed Serving]], [[GEMM Optimization]]
+**Related:** [[Tensor Parallelism]], Sequence Parallelism, Distributed Serving, GEMM Optimization
 
 ### Normalization + Quantization Fusions
 
@@ -274,7 +274,7 @@ Input → ReduceScatter → local RMSNorm → AllGather → Output
 
 **Code:** [`vllm/compilation/passes/fusion/rms_quant_fusion.py`](https://github.com/vllm-project/vllm/blob/main/vllm/compilation/passes/fusion/rms_quant_fusion.py) (CUDA/HIP), [`vllm/compilation/passes/fusion/rocm_aiter_fusion.py`](https://github.com/vllm-project/vllm/blob/main/vllm/compilation/passes/fusion/rocm_aiter_fusion.py) (AITER), [`csrc/layernorm_quant_kernels.cu`](https://github.com/vllm-project/vllm/blob/main/csrc/layernorm_quant_kernels.cu)
 
-**Related:** [[Quantization]], [[RMSNorm]], [[AITER Backend]]
+**Related:** [[Quantization]], RMSNorm, AITER Backend
 
 ---
 
@@ -296,7 +296,7 @@ Input → ReduceScatter → local RMSNorm → AllGather → Output
 
 **Code:** [`vllm/compilation/passes/fusion/act_quant_fusion.py`](https://github.com/vllm-project/vllm/blob/main/vllm/compilation/passes/fusion/act_quant_fusion.py) (CUDA/HIP), [`vllm/compilation/passes/fusion/rocm_aiter_fusion.py`](https://github.com/vllm-project/vllm/blob/main/vllm/compilation/passes/fusion/rocm_aiter_fusion.py) (AITER), [`csrc/quantization/fused_kernels/fused_silu_mul_block_quant.cu`](https://github.com/vllm-project/vllm/blob/main/csrc/quantization/fused_kernels/fused_silu_mul_block_quant.cu)
 
-**Related:** [[Quantization]], [[SiLU Activation]], [[Gate-Up Projection]]
+**Related:** [[Quantization]], SiLU Activation, Gate-Up Projection
 
 ### ROCm/AITER-Specific Fusions
 
@@ -314,7 +314,7 @@ Input → ReduceScatter → local RMSNorm → AllGather → Output
 
 **Code:** [`vllm/compilation/passes/fusion/rope_kvcache_fusion.py`](https://github.com/vllm-project/vllm/blob/main/vllm/compilation/passes/fusion/rope_kvcache_fusion.py)
 
-**Related:** [[RoPE]], [[KV Cache]], [[AITER Backend]]
+**Related:** RoPE, [[KV Cache]], AITER Backend
 
 ---
 
@@ -330,7 +330,7 @@ Input → ReduceScatter → local RMSNorm → AllGather → Output
 
 **Code:** [`vllm/compilation/passes/fusion/rocm_aiter_fusion.py`](https://github.com/vllm-project/vllm/blob/main/vllm/compilation/passes/fusion/rocm_aiter_fusion.py) (`RocmAiterTritonAddRMSNormPadFusionPass`)
 
-**Related:** [[AITER Backend]], [[RMSNorm]], [[GPT-OSS Models]]
+**Related:** AITER Backend, RMSNorm, GPT-OSS Models
 
 ---
 
@@ -364,7 +364,7 @@ q_normed, kv_normed = fused_mla_dual_rms_norm(
 
 **Code:** [`vllm/compilation/passes/fusion/rocm_aiter_fusion.py`](https://github.com/vllm-project/vllm/blob/main/vllm/compilation/passes/fusion/rocm_aiter_fusion.py) (`MLADualRMSNormFusionPass`), [`vllm/_aiter_ops.py`](https://github.com/vllm-project/vllm/blob/main/vllm/_aiter_ops.py), [AITER kernel PR](https://github.com/ROCm/aiter/pull/2442)
 
-**Related:** [[MLA Attention]], [[DeepSeek V3]], [[Kimi K2]], [[AITER Backend]]
+**Related:** MLA Attention, DeepSeek V3, Kimi K2, AITER Backend
 
 ## Hardware Support Matrix
 
@@ -497,7 +497,7 @@ See [[torch.compile Integration]] for full pipeline details.
 | `fuse_mla_dual_rms_norm` | Off  | On (AITER)| On (AITER)| On (AITER)|
 | `fuse_minimax_qk_norm`   | Off  | Off       | Off       | Off       |
 
-**"Cond."** = Conditional on custom kernel usage (see [[Inductor Fusion Competition]] above).
+**"Cond."** = Conditional on custom kernel usage (see Inductor Fusion Competition above).
 
 See [[Optimization Levels]] for full flag matrix.
 
@@ -517,8 +517,8 @@ See [[Optimization Levels]] for full flag matrix.
 - [[Tensor Parallelism]] — AllReduce, ReduceScatter, AllGather fusions
 - [[CustomOp System]] — custom op vs Inductor fusion dispatch
 - [[Attention Backends]] — attention backend compatibility with fusions
-- [[AITER Backend]] — ROCm-specific fusion backend
-- [[FlashInfer Backend]] — NVIDIA-specific fusion backend
+- AITER Backend — ROCm-specific fusion backend
+- FlashInfer Backend — NVIDIA-specific fusion backend
 
 ## Further Reading
 

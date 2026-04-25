@@ -124,7 +124,7 @@ vllm serve meta-llama/Llama-3-70b \
   --master-addr <HEAD_NODE_IP> --headless
 ```
 
-See [[Python Multiprocessing]] for tradeoffs between `fork`, `spawn`, and Ray.
+See Python Multiprocessing for tradeoffs between `fork`, `spawn`, and Ray.
 
 ## Communication Patterns
 
@@ -277,7 +277,7 @@ vllm serve ... --verbose
 - [[Expert Parallelism]] — Distribute MoE experts across stages
 - [[Context Parallelism]] — Shard long sequences (orthogonal to PP)
 - [[vLLM Engine]] — Scheduler and executor architecture that orchestrates PP stages
-- [[Python Multiprocessing]] — Distributed executor backend tradeoffs (fork vs spawn vs Ray)
+- Python Multiprocessing — Distributed executor backend tradeoffs (fork vs spawn vs Ray)
 - [[Mixture of Experts]] — MoE architecture and PP interaction
 
 ## Key Metrics

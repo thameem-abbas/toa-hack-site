@@ -123,7 +123,7 @@ Source summary for vLLM internal design documents covering attention backends, m
 - [[CustomOp System]] — custom ops for OOT hardware (communicator, common, csrc)
 - [[vLLM Engine]] — plugin loading in engine initialization
 - [[Attention Backends]] — OOT attention backend registration
-- [[Multi-Modal Models]] — IO processor plugins for pre/post-processing
+- Multi-Modal Models — IO processor plugins for pre/post-processing
 
 ## Metrics
 

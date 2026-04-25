@@ -97,7 +97,7 @@ Typically 1.5-2.5× speedup for greedy decoding.
 
 ### LoRA Serving
 
-Multi-adapter serving from single base model (see [[LoRA Serving]]):
+Multi-adapter serving from single base model (see LoRA Serving):
 - Load multiple LoRA adapters (e.g., 100 adapters)
 - Per-request adapter selection
 - Batched inference across different adapters
@@ -262,7 +262,7 @@ pip install -e .
 
 **Tools:**
 - [[llm-compressor]] — quantization toolkit
-- [[GuideLLM]] — benchmarking tool
+- GuideLLM — benchmarking tool
 
 ## See Also
 

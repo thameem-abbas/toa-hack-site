@@ -170,7 +170,7 @@ sampling_params = SamplingParams(structured_outputs=structured_outputs_params)
 - [[Structured Outputs]] — Full technique page
 - [[vLLM Engine]] — Logits processors for masking
 - [[V1 Architecture]] — Grammar compilation in model executor
-- [[Tool Calling]] — Uses structured outputs for function arguments
+- Tool Calling — Uses structured outputs for function arguments
 
 ---
 

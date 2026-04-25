@@ -224,7 +224,7 @@ Block table lookup adds small overhead vs. contiguous memory. Mitigated by:
 - Inspired TensorRT-LLM, SGLang, MLC-LLM, llama.cpp
 
 **Extensions:**
-- Disaggregated serving: Separate prefill/decode pools (see [[Splitwise]], [[DistServe]])
+- Disaggregated serving: Separate prefill/decode pools (see Splitwise, DistServe)
 - Quantized KV cache: FP8, INT8 KV cache (vLLM V1 feature)
 - Multi-tier caching: GPU → CPU → SSD cache hierarchy
 

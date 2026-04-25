@@ -223,7 +223,7 @@ GGUF embeds model metadata (architecture, vocab, hyperparameters) in the file he
 - **llama.cpp:** Original GGUF ecosystem
 - **gguf-split:** Tool for merging multi-file models
 - **Ollama, LM Studio:** Other GGUF runtimes
-- [[lm-eval Harness]] — Accuracy evaluation
+- lm-eval Harness — Accuracy evaluation
 
 ## Future Directions
 

@@ -460,7 +460,7 @@ def register():
 - [[CustomOp System]] — custom ops for OOT hardware (communicator, common, csrc ops)
 - [[vLLM Engine]] — plugin loading during engine initialization
 - [[Attention Backends]] — OOT attention backend registration via platform plugins
-- [[Multi-Modal Models]] — IO processor plugins for multimodal pre/post-processing
+- Multi-Modal Models — IO processor plugins for multimodal pre/post-processing
 - [[V1 Architecture]] — plugin integration in V1 multi-process architecture
 - [[Model Runner V2]] — platform-specific optimizations in MRV2
 

@@ -291,7 +291,7 @@ vllm serve deepseek-ai/deepseek-r1 \
 - [[Expert Parallelism]] — EP concept page for expert-specific sharding
 - [[KV Cache]] — KV cache mechanics and memory footprint
 - [[vLLM Engine]] — Scheduler and executor architecture
-- [[Python Multiprocessing]] — Multiprocessing method tradeoffs (fork/spawn)
+- Python Multiprocessing — Multiprocessing method tradeoffs (fork/spawn)
 
 ## Key Metrics
 

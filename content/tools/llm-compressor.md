@@ -400,12 +400,12 @@ vllm serve ./llama3-8b-int8 --quantization int8
 - AutoAWQ: Deprecated, AWQ-only
 - Recommendation: Use llm-compressor
 
-**llm-compressor vs [[AMD Quark]]:**
+**llm-compressor vs AMD Quark:**
 - llm-compressor: NVIDIA-focused, vLLM-native
 - Quark: AMD-focused (MI-series GPUs), supports MXFP4/MXFP6
 - Recommendation: llm-compressor for NVIDIA, Quark for AMD
 
-**llm-compressor vs [[NVIDIA Model Optimizer]]:**
+**llm-compressor vs NVIDIA Model Optimizer:**
 - llm-compressor: Open-source, vLLM-native, Red Hat supported
 - ModelOpt: NVIDIA official, supports VLMs and diffusion models
 - Recommendation: llm-compressor for LLMs, ModelOpt for VLMs/diffusion
@@ -451,10 +451,10 @@ vllm serve ./llama3-8b-int8 --quantization int8
 - [[GPTQ]] — Supported quantization method
 - [[FP8 Quantization]] — Supported quantization method
 - [[INT8 W8A8]] — Supported quantization method (if exists)
-- [[SmoothQuant]] — Supported calibration technique (if exists)
+- SmoothQuant — Supported calibration technique (if exists)
 - [[vLLM]] — Target inference engine
-- [[AutoGPTQ]] — Deprecated predecessor
-- [[AutoAWQ]] — Deprecated predecessor
-- [[AMD Quark]] — AMD alternative
-- [[NVIDIA Model Optimizer]] — NVIDIA alternative
-- [[lm-eval Harness]] — Evaluation tool
+- AutoGPTQ — Deprecated predecessor
+- AutoAWQ — Deprecated predecessor
+- AMD Quark — AMD alternative
+- NVIDIA Model Optimizer — NVIDIA alternative
+- lm-eval Harness — Evaluation tool

@@ -237,7 +237,7 @@ Latencies scale with model size and GPU count.
 ## Limitations
 
 1. **KV cache discarded**: Prefix cache benefits lost on wake-up
-2. **In-flight requests**: Must be drained (or use [[Async RL]] pause/resume API)
+2. **In-flight requests**: Must be drained (or use Async RL pause/resume API)
 3. **CPU RAM requirement** (Level 1): Must fit model weights
 4. **Dev mode required**: HTTP endpoints need `VLLM_SERVER_DEV_MODE=1`
 5. **ROCm chunking**: Requires tuning chunk size for large models
@@ -282,7 +282,7 @@ llm_b = LLM("model-b")  # Now enough GPU memory
 
 ## Async RL Integration
 
-See [[Async RL]] for advanced pause/resume workflow:
+See Async RL for advanced pause/resume workflow:
 
 **Pause/Resume API** coordinates with Sleep Mode:
 ```python
@@ -321,7 +321,7 @@ Combined: Safe mid-flight weight updates.
 ## Cross-References
 
 - [[RLHF with vLLM]] — Sleep Mode in RLHF training pipeline
-- [[Async RL]] — Pause/resume API for mid-flight weight updates
+- Async RL — Pause/resume API for mid-flight weight updates
 - [[vLLM Engine]] — Engine sleep/wake implementation
 - [[Tensor Parallelism]] — Distributed sleep/wake
 - [[Data Parallelism]] — Per-rank sleep state management

@@ -197,8 +197,8 @@ Marlin kernel flow (optimized):
 
 **Toolchain:**
 - [[llm-compressor]] — Recommended quantization toolkit
-- [[AutoGPTQ]] — Alternative INT4 method (GPTQ)
-- [[lm-eval Harness]] — Accuracy evaluation
+- AutoGPTQ — Alternative INT4 method (GPTQ)
+- lm-eval Harness — Accuracy evaluation
 
 ## Limitations
 
@@ -231,5 +231,5 @@ Marlin kernel flow (optimized):
 - [[GGUF]] — Cross-platform quantization format
 - [[llm-compressor]] — Recommended quantization tool
 - [[INT4 W4A16]] — Technical specification (if exists in vault)
-- [[Marlin]] — Optimized execution backend (if exists in vault)
+- Marlin — Optimized execution backend (if exists in vault)
 - [[vLLM]] — Inference engine

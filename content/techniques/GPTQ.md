@@ -256,8 +256,8 @@ This allows fine-grained control over the accuracy-memory tradeoff.
 
 **Toolchain:**
 - [[llm-compressor]] — Unified quantization toolkit (vLLM team)
-- [[AutoGPTQ]] — Legacy GPTQ library (deprecated)
-- [[lm-eval Harness]] — Accuracy evaluation
+- AutoGPTQ — Legacy GPTQ library (deprecated)
+- lm-eval Harness — Accuracy evaluation
 
 ## Limitations
 
@@ -311,5 +311,5 @@ Combine GPTQ with other techniques:
 - [[GGUF]] — Cross-platform quantization format
 - [[llm-compressor]] — Unified quantization tool
 - [[INT4 W4A16]] — Technical specification (if exists)
-- [[Marlin]] — Optimized execution backend (if exists)
+- Marlin — Optimized execution backend (if exists)
 - [[vLLM]] — Inference engine
