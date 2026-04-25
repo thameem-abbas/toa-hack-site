@@ -8,16 +8,14 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "vLLM Research Wiki",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: null,
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "thameem-abbas.github.io/toa-hack-site",
+    ignorePatterns: ["private", "templates", ".obsidian", "log/", "folds/"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
